@@ -2,7 +2,7 @@ FROM ubuntu:20.04 AS build
 
 # Копирование файлов приложения в рабочую директорию
 WORKDIR /app
-COPY ../../Desktop/SingleWellStudyOnline .
+COPY . .
 
 # # Установка зависимостей и сборка проекта
 RUN apt-get update && DEBIAN_FRONTEND="noninteractive" TZ="Europe/Samara" apt-get install -y tzdata 
