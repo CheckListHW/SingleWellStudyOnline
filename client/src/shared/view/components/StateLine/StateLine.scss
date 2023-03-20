@@ -1,0 +1,9 @@
+.state-line {
+  display: flex;
+  padding: 0.5rem;
+
+  &__item {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+  }
+}

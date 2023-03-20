@@ -1,0 +1,57 @@
+.scatter-plot {
+  &__header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+    min-height: 29px;
+
+    &-wrapper {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__distance-wrapper {
+    padding: 0.2rem 0 0.3rem;
+  }
+
+  &__scale-units {
+    display: flex;
+    justify-content: center;
+    padding: 0 3px;
+    height: 12px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.7rem;
+  }
+
+  &__scale-labels {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3px;
+    height: 12px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.7rem;
+  }
+
+  &__sheet {
+    position: relative;
+
+    &-low-label {
+      position: absolute;
+      right: 3px;
+      bottom: 4px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 0.7rem;
+    }
+  }
+
+  &__canvas-sheet {
+    cursor: crosshair;
+  }
+}

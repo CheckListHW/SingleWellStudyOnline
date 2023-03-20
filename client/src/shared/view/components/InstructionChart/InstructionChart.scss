@@ -1,0 +1,50 @@
+.instruction-chart {
+  &__header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+
+    &-wrapper {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__scale-units {
+    display: flex;
+    justify-content: center;
+    padding: 0 3px;
+    height: 12px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.7rem;
+  }
+
+  &__scale-labels {
+    display: flex;
+    justify-content: space-between;
+    height: 12px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.7rem;
+  }
+
+  &__sheet {
+    position: relative;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+
+    &-initial-message {
+      display: none;
+      color: rgba(0, 0, 0, 0.3);
+
+      &_visible {
+        display: block;
+        padding: 10px;
+      }
+    }
+  }
+}

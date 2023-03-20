@@ -1,0 +1,77 @@
+.chart {
+  &__header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+    min-height: 29px;
+
+    &-wrapper {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__scale-units {
+    display: flex;
+    justify-content: center;
+    padding: 0 3px;
+    height: 12px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.7rem;
+  }
+
+  &__scale-labels {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3px;
+    height: 12px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.7rem;
+
+    &-item {
+      &_marked {
+        color: #f00;
+      }
+    }
+  }
+
+  &__sheet {
+    position: relative;
+  }
+
+  &__canvas-sheet {
+    cursor: crosshair;
+  }
+
+  &__horizontal-line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border: 1px dashed red;
+    cursor: crosshair;
+  }
+
+  &__vertical-line {
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 99.5%;
+    border: 1px dashed red;
+    cursor: crosshair;
+
+    &_type {
+      &_clay {
+        border: 1px solid red;
+      }
+
+      &_sand {
+        border: 1px solid orange;
+      }
+    }
+  }
+}

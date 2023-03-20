@@ -1,0 +1,17 @@
+.personal-data-form {
+  &__header {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 2rem;
+  }
+
+  &__field-name-wrapper {
+    padding: 0.5rem;
+  }
+
+  &__button-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+  }
+}

@@ -1,0 +1,11 @@
+.mass-change-activity-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &__input-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 0.25rem;
+  }
+}

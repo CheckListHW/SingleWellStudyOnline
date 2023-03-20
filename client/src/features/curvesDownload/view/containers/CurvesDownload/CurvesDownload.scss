@@ -1,0 +1,45 @@
+.curves-download {
+  position: relative;
+  padding: 2rem;
+  min-width: 44.6rem;
+
+  &__main-header-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    padding: 0.2rem;
+  }
+
+  &__curves-list {
+    overflow-y: scroll;
+    height: 580px;
+  }
+
+  &__row {
+    display: flex;
+    padding: 0.5rem;
+    width: 100%;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+
+    &_type_list-main-header {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      font-weight: bold;
+    }
+  }
+
+  &__constrol-button-row {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+
+  &__cell {
+    flex-grow: 1;
+
+    &:first-child {
+      flex-grow: 0;
+      width: 3rem;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.auth-form {
+  padding: 0 0 2rem;
+  min-width: 22.5rem;
+  border-radius: 0.5rem;
+
+  &__header {
+    padding: 0 0 1rem;
+    color: #3c485e;
+    text-align: center;
+    letter-spacing: 0.1px;
+    font-weight: bold;
+    font-size: 1.375rem;
+  }
+
+  &__email-wrapper,
+  &__password-wrapper {
+    padding: 1rem 0;
+  }
+}

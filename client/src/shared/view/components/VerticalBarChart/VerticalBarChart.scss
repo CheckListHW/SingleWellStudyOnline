@@ -1,0 +1,102 @@
+.vertical-bar-chart {
+  &__header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+
+    &-wrapper {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__scale-units {
+    display: flex;
+    justify-content: center;
+    padding: 0 3px;
+    height: 12px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.7rem;
+  }
+
+  &__scale-labels {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3px;
+    height: 12px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.7rem;
+  }
+
+  &__sheet {
+    position: relative;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+
+    &-initial-message {
+      display: none;
+      color: rgba(0, 0, 0, 0.3);
+
+      &_visible {
+        display: block;
+        padding: 10px;
+      }
+    }
+  }
+
+  &__note {
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    &-header {
+      position: absolute;
+      top: 5px;
+      right: 0;
+      display: flex;
+
+      &-inner {
+        margin-right: 0.5rem;
+      }
+    }
+
+    &-inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-color: rgb(192, 106, 35);
+    }
+
+    &-text {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  }
+
+  &__modal-content {
+    padding: 20px;
+  }
+
+  &__min-height-input,
+  &__max-height-input {
+    padding: 0 0 10px 0;
+  }
+
+  &__modal-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+}

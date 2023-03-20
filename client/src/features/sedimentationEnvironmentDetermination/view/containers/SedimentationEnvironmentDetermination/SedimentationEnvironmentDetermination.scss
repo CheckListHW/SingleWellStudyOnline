@@ -1,0 +1,32 @@
+.sedimentation-environment-determination {
+  position: relative;
+
+  &__main-block-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__cells {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+    padding: 0 5px;
+
+    &-inner-wrapper {
+      display: flex;
+      flex-grow: 1;
+      overflow: hidden;
+      overflow-x: scroll;
+    }
+  }
+
+  &__cell {
+    display: none;
+    margin-right: 0;
+
+    &_visible {
+      display: block;
+    }
+  }
+}

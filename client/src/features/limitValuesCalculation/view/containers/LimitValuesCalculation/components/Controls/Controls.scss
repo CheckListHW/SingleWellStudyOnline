@@ -1,0 +1,18 @@
+.controls {
+  padding: 0 0.3rem 0.3rem 0.3rem;
+  max-width: 30rem;
+
+  &__field-name-wrapper {
+    padding: 0.3rem;
+
+    &_marked {
+      color: #900;
+    }
+  }
+
+  &__button-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem 0;
+  }
+}

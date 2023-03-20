@@ -1,0 +1,17 @@
+.admin-panel-header-bar {
+  &__wrap {
+    margin-right: 1.5rem;
+    padding-right: 1.5rem;
+    border-right: 1px solid #000;
+  }
+
+  &__head {
+    color: rgb(0, 113, 178);
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  &__inner-wrapper {
+    margin-right: 1rem;
+  }
+}

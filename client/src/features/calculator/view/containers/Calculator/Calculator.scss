@@ -1,0 +1,149 @@
+.calculator {
+  position: relative;
+
+  &__main-header-panel {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.2rem;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+
+    &-inner-wrapper {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__main-body-wrapper {
+    display: flex;
+    padding: 0.25rem;
+  }
+
+  &__calculator-body {
+    padding: 0.25rem;
+    max-width: 44.6rem;
+
+    &_border-right_dashed {
+      border-right: 1px dashed rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__instruction {
+    display: none;
+    padding: 0.25rem;
+    width: 30rem;
+    height: 39.8125rem;
+
+    &_visible {
+      display: block;
+      overflow-y: scroll;
+    }
+
+    &-wrapper {
+      padding: 0.4rem;
+    }
+  }
+
+  &__upper-control-line {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem;
+  }
+
+  &__new-line-name {
+    max-width: 5rem;
+  }
+
+  &__equal-sign {
+    width: 2rem;
+    text-align: center;
+  }
+
+  &__expression {
+    flex-grow: 1;
+  }
+
+  &__curve-select {
+    width: 100%;
+    height: 38px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: #fff;
+
+    &-option {
+      &_color_grey {
+        color: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  &__down-control-line {
+    padding: 0.25rem;
+  }
+
+  &__control-buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-cell {
+      padding: 0.25rem;
+      width: 4rem;
+    }
+  }
+
+  &__control-button {
+    &_color_red {
+      background-color: #f00 !important;
+    }
+
+    &_color_green {
+      background-color: #0f0 !important;
+    }
+
+    &_color_purple {
+      background-color: rgb(228, 177, 243) !important;
+    }
+  }
+
+  &__calculated-curves-block {
+    padding: 0.25rem;
+
+    &-inner {
+      overflow-y: scroll;
+      padding: 0.5rem;
+      height: 20rem;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+
+    &-item {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      padding: 0.25rem;
+      border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+
+      &-inner-wrap {
+        padding-right: 0.5rem;
+      }
+
+      &-name {
+        flex-grow: 1;
+      }
+    }
+
+    &-group-header {
+      padding-top: 0.5rem;
+    }
+
+    &-header {
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  &__calculate-for-current-tab-checkbox-line {
+    padding: 0.5rem;
+  }
+}
+
+.Modal {
+  z-index: 10 !important;
+}

@@ -1,0 +1,16 @@
+.chart-menu {
+  color: #fff;
+
+  &__flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button-distance-wrapper {
+    padding-left: 0.625rem;
+  }
+
+  &__distance-wrapper {
+    padding: 0.2rem 0 0.3rem;
+  }
+}

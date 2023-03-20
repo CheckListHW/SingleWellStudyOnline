@@ -1,0 +1,7 @@
+{
+  "port": 80,
+  "jwtSecretKey": "special secret key for SWS Onlin platform jdghaflsdhflasd4f5sa4df54",
+  "mongoUri": "mongodb://172.17.0.1:27017",
+  "baseUrl": "https://one.oilcase.ru",
+  "internalErrorMessage": "Внутренняя ошибка сервера. Попробуйте еще раз позднее или обратитесь к администратору. Internal server error"
+}

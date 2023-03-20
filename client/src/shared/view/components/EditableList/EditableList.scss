@@ -1,0 +1,57 @@
+.editable-list {
+  &__header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+
+    &-wrapper {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__scale-units {
+    display: flex;
+    justify-content: center;
+    padding: 0 3px;
+    height: 12px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.7rem;
+  }
+
+  &__scale-labels {
+    display: flex;
+    justify-content: space-around;
+    height: 12px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.7rem;
+
+    &-item {
+      text-align: center;
+    }
+  }
+
+  &__list {
+    position: relative;
+    overflow-y: scroll;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+
+    &-row {
+      display: flex;
+      align-items: center;
+      padding-bottom: 0.2rem;
+    }
+
+    &-cell-checkbox-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

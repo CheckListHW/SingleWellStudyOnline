@@ -1,0 +1,7 @@
+{
+  "port": 5000,
+  "jwtSecretKey": "special secret key for SWS Onlin platform jdghaflsdhflasd4f5sa4df54",
+  "mongoUri": "mongodb://localhost:27017",
+  "baseUrl": "http://0.0.0.0:5000",
+  "internalErrorMessage": "Внутренняя ошибка сервера. Попробуйте еще раз позднее или обратитесь к администратору. Internal server error"
+}

@@ -1,0 +1,24 @@
+.login-layout {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  &__language-selector {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+
+    &-text-wrapper {
+      margin-right: 1rem;
+      min-width: 8rem;
+    }
+
+    &-wrapper {
+      min-width: 8rem;
+    }
+  }
+}

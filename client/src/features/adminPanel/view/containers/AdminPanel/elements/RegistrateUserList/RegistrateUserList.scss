@@ -1,0 +1,18 @@
+.registrate-user-list {
+  &__mass-registrate-form {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+
+  &__distance-wrapper,
+  &__registration-list {
+    margin: 1rem;
+  }
+
+  &__registration-list-row {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+}
