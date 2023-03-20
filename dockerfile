@@ -18,7 +18,7 @@ RUN sh -c 'cd client && npm run build:prod'
 FROM nginx:latest
 
 # # Копирование собранного проекта в директорию Nginx
-COPY --from=build /build /usr/share/nginx/html
+COPY --from=build /app/client/build /usr/share/nginx/html
 
 # Открытие порта для доступа к приложению
 EXPOSE 80
