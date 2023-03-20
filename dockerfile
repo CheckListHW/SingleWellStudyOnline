@@ -13,14 +13,9 @@ RUN apt update
 RUN npm i
 RUN cd client
 RUN npm i
-RUN npm run build:prod
 
-# # Определение образа для запуска приложения на Nginx
-FROM nginx:latest
 
-# # Копирование собранного проекта в директорию Nginx
-COPY --from=build /build /usr/share/nginx/html
-
+RUN apt install nginx -y
 # Открытие порта для доступа к приложению
 EXPOSE 80
 
